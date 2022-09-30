@@ -25,40 +25,40 @@
         <title>Inicio</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Inicio</a>
-            <div id="user-data-profile">
-                <span class="badge badge-light mr-3" id="user-saldo"></span>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span id="ajustes">Ajustes </span>
-                    </button>
-                    <div class="dropdown-menu" id="main-menu">
-                        <a id="mi-perfil-btn" class="dropdown-item">Mi perfil</a>
-                        <a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>
+        <div class="p-3 mb-2 bg-dark text-dark">
+            <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <div id="user-data-profile">
+                    <span class="badge badge-light mr-3" id="user-saldo"></span>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span id="ajustes">Ajustes </span>
+                        </button>
+                        <div class="dropdown-menu" id="main-menu">
+                            <a id="mi-perfil-btn" class="dropdown-item">Mi perfil</a>
+                            <a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <main class="p-4 d-flex justify-content-center">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Número de Cuarto</th>
-                        <th scope="col" id="ordenar-clasificacion" data-toogle="tooltip" 
-                            data-placement="top" title="Ordenar por clasificación">Clasificación
-                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
-                        <th scope="col">Disponibilidad</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Reservar</th>
-                    </tr>
-                </thead>
-                <tbody id="cuartos-tbody">
-
-                </tbody>
-            </table>
-        </main>
-
+            </nav>
+            <main class="p-4 d-flex justify-content-center">
+                <table class="table table-dark table-striped" style="max-width: 60rem;">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Número de Cuarto</th>
+                            <th scope="col" id="ordenar-clasificacion" data-toogle="tooltip" 
+                                data-placement="top" title="Ordenar por clasificación">Clasificación
+                                <span class="fas fa-sort" id="icono-ordenar"></span></th>
+                            <th scope="col">Disponibilidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Reservar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuartos-tbody">
+                    </tbody>
+                </table>
+            </main>
+        </div>
     </body>
 </html>

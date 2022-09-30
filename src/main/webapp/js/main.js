@@ -101,7 +101,7 @@ function mostrarCuartos(cuartos) {
             
             contenido += '></td>' +
                     '<td>' + precio + '</td>' +
-                    '<td><button onclick="alquilarCuarto(' + cuarto.id + ',' + precio + ');" class="btn btn-success" ';
+                    '<td><button onclick="alquilarCuarto(' + cuarto.id + ',' + precio + ');" class="btn btn-primary" ';
             if (user.saldo < precio) {
                 contenido += ' disabled ';
             }

@@ -92,7 +92,7 @@ function mostrarHistorial(cuartos) {
                     
             contenido += '></td><td>' + cuarto.fechaAlquiler + '</td>' +
                     '<td><button id="devolver-btn" onclick= "devolverCuarto(' + cuarto.id 
-                    + ');" class="btn btn-danger">Devolver Cuarto</button></td></tr>';
+                    + ');" class="btn btn-success">Devolver Cuarto</button></td></tr>';
 
         });
         $("#historial-tbody").html(contenido);
