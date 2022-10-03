@@ -124,7 +124,7 @@ public class CuartoController implements ICuartoController {
     public String sumarCantidad(int id) {
 
         DBConnection con = new DBConnection();
-                    
+
         String sql = "Update cuartos set disponibilidad = (disponibilidad + 1) where id = " + id;
 
         try {
